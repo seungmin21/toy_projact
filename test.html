@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <span class="text"></span>
+  </div>
+  <script>
+    const content = "Hello myfile"
+    // querySelector에 대해 검색 필요
+    const text = document.querySelector(".text");
+    let i = 0;
+    
+    function typing() {
+      if(i < content.length) {
+        // charAt 메서드에 대해 검색 필요
+        let txt = content.charAt(i);
+        // 더하기 할당 연산자에 대해 검색 필요
+        text.innerHTML += txt; 
+        i++;
+      }
+    }
+setInterval(typing, 300);
+  </script>
+</body>
+</html>
