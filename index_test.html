@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <!-- 제목 겸 클릭 매개체 -->
+    <h1 id="start-title">하와이안 피자</h1>
+    <!-- 내용 -->
+    <div id="contents"></div>
+  </div>
+  <script>
+    const startTitle = document.getElementById('start-title');
+    console.dir(startTitle);
+
+    // 내용 경로 파악
+    const Content = document.getElementById('contents');
+    console.dir(Content);
+
+    Content.innerHTML = '<object type="text/html" data="Hawaiian-pizza.html"></object>';
+  </script>
+</body>
+</html>
